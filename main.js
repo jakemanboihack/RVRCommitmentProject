@@ -28,10 +28,10 @@ async function startProgram() {
 	exitProgram()
 }
 
-async function stageOne(){
+async function Jake1(){
 
 
-	let setpoint = 180;
+	let setpoint = 240;
 	let k = 2.0;
 	let kD = 0.5;
 	let kI = 0.001;
@@ -88,7 +88,7 @@ async function stageOne(){
 
 }
 
-async function stageTwo(){
+async function Jake2(){
 
 //This is a hacky way to quickly do a point turn to 90 degrees.
 
@@ -99,11 +99,9 @@ await roll(90,-50,0.1)
 }
 
 
-async function stageThree(){
+async function Jake(){
 
-	//Travel for eighty centimeters at a heading of 90 degrees
-
-	let setpoint = 120;
+	let setpoint = 300;
 	let k = 2.0;
 	let kD = 0.5;
 	let kI = 0.001;
